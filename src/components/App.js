@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/App.css";
 import Component from "./Component";
 import ErrorBoundary from "./ErrorBoundary";
 const App = () => {
 
+  const [changeFunc, setchangeFunc] = useState(false);
+
+  const errorGenerator = () => {
+    setchangeFunc(true);
+  }
 
   return (
 
